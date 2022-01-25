@@ -4,7 +4,6 @@
     <footer class="text-center my-4">
         De LATAM con 💚 para el mundo
     </footer>
-<script src="assets/js/script.js"></script>
 
 <?php wp_footer(); ?>
 </body>
