@@ -34,3 +34,14 @@ function yrs_theme_supports() {
 
 add_action( 'after_setup_theme', 'yrs_theme_supports' );
 
+function yrs_add_menus() {
+    register_nav_menus(
+        array(
+        'menu-principal' => 'Menu Principal',
+        'menu-responsive' => 'Menu Responsive',
+        )
+    );
+
+}
+
+add_action( 'after_setup_theme', 'yrs_add_menus' );
