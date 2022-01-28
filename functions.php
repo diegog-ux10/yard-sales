@@ -12,3 +12,9 @@ wp_enqueue_script("yardsale-js",get_template_directory_uri()."/assets/js/script.
 }
 
 add_action("wp_enqueue_scripts","yrs_assets");
+
+function yrs_analytics (){
+
+};
+
+add_action( "wp_body_open", "yrs_analytics");
