@@ -45,3 +45,16 @@ function yrs_add_menus() {
 }
 
 add_action( 'after_setup_theme', 'yrs_add_menus' );
+
+function yrs_add_sidebar() {
+    register_sidebar(
+        array(
+            'name' => 'Pie de Pagina',
+            'id' => 'pie-pagina',
+            'before_widget' => '',
+            'after_widget' => '',
+        )
+    );
+}
+
+add_action( 'widgets_init', 'yrs_add_sidebar'); 
